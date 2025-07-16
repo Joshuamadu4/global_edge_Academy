@@ -46,7 +46,7 @@ const Header = () => {
       <div className="container flex h-14 items-center max-lg:px-5">
         {/* Logo for Mobile */}
         <div className="lg:hidden flex-1 cursor-pointer z-2">
-          <Image src="/images/xora.svg" width={115} height={55} alt="logo" />
+          <Image src="/images/logo.svg" width={115} height={55} alt="logo" />
         </div>
 
         {/* Mobile Sidebar Nav */}
