@@ -1,0 +1,4 @@
+<!-- hands-on.svg (white stroke) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 24 24" stroke="#ffffff">
+  <path stroke-width="2" d="M9.75 3L9 4.5h6L14.25 3h-4.5zM5.75 6.75l-.5 1.5h13.5l-.5-1.5H5.75zM12 22a10 10 0 100-20 10 10 0 000 20z"/>
+</svg>
