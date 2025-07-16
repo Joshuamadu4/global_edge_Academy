@@ -132,51 +132,51 @@ export interface Testimonials{
 export const testimonials: Testimonials[] = [
   {
     id: "0",
-    name: "Jessica Saunders",
-    role: "Globalnomads",
-    avatarUrl: "/images/testimonials/jessica-saunders.png",
+    name: "Precious Okafor",
+    role: "Parent",
+    avatarUrl: "/images/testimonials/precious-okafor.png",
     comment:
-      "Xora's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
+      "Global Edge Academy has transformed my son's academic journey. The blend of technology and personalized learning is unmatched.",
   },
   {
     id: "1",
-    name: "Mark Erixon",
-    role: "Vid capital intl",
-    avatarUrl: "/images/testimonials/mark-erixon.png",
+    name: "Samuel Adedayo",
+    role: "Software Engineering Student",
+    avatarUrl: "/images/testimonials/samuel-adedayo.png",
     comment:
-      "I was skeptical at first, but now I can't imagine our content operations without it. It's that impactful.",
+      "The hands-on projects and mentorship at Global Edge Academy gave me real-world experience that prepared me for the tech industry.",
   },
   {
     id: "2",
-    name: "Melanie Hurst",
-    role: "Cyberleap",
-    avatarUrl: "/images/testimonials/melanie-hurst.png",
+    name: "Grace Umeh",
+    role: "Graphics Design Student",
+    avatarUrl: "/images/testimonials/grace-umeh.png",
     comment:
-      "Adopting this software was a breeze. It's made everyday tasks so much simpler.",
+      "I came in with zero experience, and now I design with confidence. The learning environment here is both fun and professional.",
   },
   {
     id: "3",
-    name: "Alicia Barker",
-    role: "Cyberleap",
-    avatarUrl: "/images/testimonials/alicia-barker.png",
+    name: "Dr. Akinwale Moses",
+    role: "Tech Partner, EduInnovate Africa",
+    avatarUrl: "/images/testimonials/akinwale-moses.png",
     comment:
-      "The analytics feature is like having a personal fortune teller. It's been instrumental in guiding our business decisions.",
+      "Partnering with Global Edge Academy has been impactful. They are truly redefining how technology is taught and applied.",
   },
   {
     id: "4",
-    name: "Becky Snider",
-    role: "Floclips",
-    avatarUrl: "/images/testimonials/becky-snider.png",
+    name: "Jennifer Chukwu",
+    role: "Robotics & AI Student",
+    avatarUrl: "/images/testimonials/jennifer-chukwu.png",
     comment:
-      "Switched to Xora last month, and I'm already seeing results. Best decision for our team!",
+      "The Robotics lab is amazing! I’ve built real prototypes and even competed in regional tech fairs thanks to GEA.",
   },
   {
     id: "5",
-    name: "Jim Bradley",
-    role: "Vid capital intl",
-    avatarUrl: "/images/testimonials/jim-bradley.png",
+    name: "Emeka Nwosu",
+    role: "Alumnus - Web Development Track",
+    avatarUrl: "/images/testimonials/emeka-nwosu.png",
     comment:
-      "The efficiency boost is undeniable. This platform has transformed our workflow, forever.",
+      "Global Edge Academy gave me more than skills — they gave me a career. I landed my first job just weeks after graduating.",
   },
 ];
 
