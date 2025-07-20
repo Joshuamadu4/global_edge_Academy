@@ -100,9 +100,8 @@ const Programs = () => {
 
                 {/* CTA */}
                 
-                <a href='' target='_blank' rel='noopener noreferrer'></a>
                 <div className="mt-auto">
-                  <a href='' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://forms.gle/GjvtVf7S8Zq54xHfA' target='_blank' rel='noopener noreferrer'>
                     <Button icon="/images/zap.svg">Enroll Now</Button>
                   </a>
                 </div>
