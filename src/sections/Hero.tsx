@@ -55,7 +55,7 @@ const Hero = () => {
             <p className="max-w-lg mb-8 body-1 max-md:mb-6">
               At Global Edge Academy, we provide a supportive and modern learning environment designed to equip students with real-world skills in tech, innovation, and leadership.
             </p>
-            <LinkScroll to="features" offset={-100} spy smooth>
+            <LinkScroll to="programs" offset={-100} spy smooth>
               <Button icon="/images/zap.svg">Explore Programs</Button>
             </LinkScroll>
           </div>

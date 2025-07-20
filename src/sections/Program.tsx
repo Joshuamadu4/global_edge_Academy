@@ -99,8 +99,12 @@ const Programs = () => {
                 <p className="text-p5 body-2 mb-6">{description}</p>
 
                 {/* CTA */}
+                
+                <a href='' target='_blank' rel='noopener noreferrer'></a>
                 <div className="mt-auto">
+                  <a href='' target='_blank' rel='noopener noreferrer'>
                     <Button icon="/images/zap.svg">Enroll Now</Button>
+                  </a>
                 </div>
 
               </div>
