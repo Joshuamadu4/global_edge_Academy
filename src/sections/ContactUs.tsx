@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
-import Image from 'next/image'
+import { useEffect, useRef, useState } from 'react'
+// import Image from 'next/image'
 import { Element } from 'react-scroll'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const ContactUs = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
+  const [success, setSuccess] = useState(false)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -31,8 +32,25 @@ const ContactUs = () => {
       )
     }, sectionRef)
 
+    // Detect if user is redirected after form submit
+    if (typeof window !== 'undefined' && window.location.search.includes('submitted=true')) {
+      setSuccess(true)
+    }
+
     return () => ctx.revert()
   }, [])
+
+  // Optional cleanup: Remove the query param after a few seconds
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        const url = new URL(window.location.href)
+        url.searchParams.delete('submitted')
+        window.history.replaceState({}, '', url.toString())
+      }, 5000)
+      return () => clearTimeout(timer)
+    }
+  }, [success])
 
   return (
     <section>
@@ -48,23 +66,47 @@ const ContactUs = () => {
               </p>
             </div>
 
-            <form className="mt-8 space-y-6">
+            {/* ✅ Success Message */}
+            {success && (
+              <div className="animate-bounce text-green-400 text-lg font-semibold mb-6">
+                ✅ Thank you! Your message has been sent.
+              </div>
+            )}
+
+            {/* ✅ FormSubmit Form */}
+            <form
+              action="https://formsubmit.co/joshuamadu4@gmail.com"
+              method="POST"
+              className="mt-8 space-y-6"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://global-edge-academy.vercel.app/?submitted=true"
+              />
               <div className="flex flex-col md:flex-row gap-4">
                 <input
                   type="text"
+                  name="name"
                   placeholder="Your Name"
+                  required
                   className="w-full px-4 py-3 rounded-lg border border-s3 bg-transparent text-white placeholder:text-s4"
                 />
                 <input
                   type="email"
+                  name="email"
                   placeholder="Your Email"
+                  required
                   className="w-full px-4 py-3 rounded-lg border border-s3 bg-transparent text-white placeholder:text-s4"
                 />
               </div>
 
               <textarea
                 rows={5}
+                name="message"
                 placeholder="Your Message"
+                required
                 className="w-full px-4 py-3 rounded-lg border border-s3 bg-transparent text-white placeholder:text-s4"
               />
 
@@ -74,11 +116,10 @@ const ContactUs = () => {
             </form>
 
             {/* Contact Info */}
-            <div className="mt-12 text-left text-xl text-s4 max-w-xl mx-auto space-y-2 text-white">
+            <div className="mt-12 text-left text-xl text-s4 max-w-xl mx-auto space-y-2">
               <p><strong>Address:</strong> No. 90A Nelson Mandela Street, Asokoro, Abuja, Nigeria</p>
               <p><strong>Email:</strong> hello@globaledgeacademy.ng</p>
               <p><strong>Phone:</strong> +234 8167128006 | +234 8143795632</p>
-              
             </div>
           </div>
         </div>

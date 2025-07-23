@@ -205,7 +205,7 @@ export const plans = [
       "Flexible rescheduling",
       "Vetted subject experts",
     ],
-    icon: "/images/online.svg",
+    icon: "/images/zap.svg",
     logo: "/images/plan-1.png",
   },
   {
@@ -220,7 +220,7 @@ export const plans = [
       "Flexible rescheduling",
       "In-person teaching",
     ],
-    icon: "/images/physical.svg",
+    icon: "/images/zap.svg",
     logo: "/images/plan-2.png",
   },
   {
@@ -235,7 +235,7 @@ export const plans = [
       "Flexible rescheduling",
       "Best of both modes",
     ],
-    icon: "/images/hybrid.svg",
+    icon: "/images/zap.svg",
     logo: "/images/plan-3.png",
   },
   {
@@ -250,7 +250,7 @@ export const plans = [
       "Tutor reports",
       "Flexible rescheduling",
     ],
-    icon: "/images/custom.svg",
-    logo: "/images/plan-custom.png",
+    icon: "/images/zap.svg",
+    logo: "/images/plan-1.png",
   },
 ]
